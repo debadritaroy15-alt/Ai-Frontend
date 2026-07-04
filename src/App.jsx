@@ -24,7 +24,7 @@ const quickPrompts = [
 ]
 
 const api = axios.create({
-  baseURL: 'https://ai-backend-doge.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://ai-backend-doge.onrender.com/api',
   withCredentials: true,
 })
 

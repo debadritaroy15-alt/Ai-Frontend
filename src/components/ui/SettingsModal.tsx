@@ -90,7 +90,7 @@ export function SettingsModal() {
     }
 
     // Attempt backend update if authenticated
-    fetch('http://localhost:5000/api/auth/change-password', {
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://ai-backend-doge.onrender.com/api'}/auth/change-password`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ currentPassword: passwordForm.current, newPassword: passwordForm.newPassword })

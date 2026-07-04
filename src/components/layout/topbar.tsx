@@ -25,7 +25,7 @@ export function Topbar() {
   const unreadCount = notifications.filter(n => !n.read).length;
 
   const handleLogout = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://ai-backend-doge.onrender.com/api';
     try {
       await fetch(`${apiUrl}/auth/logout`, { method: 'POST' });
     } catch (err) {

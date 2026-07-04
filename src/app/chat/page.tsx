@@ -53,7 +53,7 @@ export default function ChatPage() {
   // Authenticate user on mount
   useEffect(() => {
     const checkAuth = async () => {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://ai-backend-doge.onrender.com/api';
       try {
         const res = await fetch(`${apiUrl}/auth/me`, { credentials: 'include' });
         const data = await res.json();
@@ -87,7 +87,7 @@ export default function ChatPage() {
   }, [messages, isSending]);
 
   const quickActions = useMemo(() => starterPrompts, []);
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://ai-backend-doge.onrender.com/api';
 
   const submitMessage = async () => {
     if (!draft.trim() && uploadedFiles.length === 0) return;

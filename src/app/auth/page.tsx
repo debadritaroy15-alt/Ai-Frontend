@@ -42,7 +42,7 @@ export default function AuthPage() {
     setIsLoading(true);
     setAlert(null);
 
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://ai-backend-doge.onrender.com/api';
 
     try {
       if (mode === 'signup') {

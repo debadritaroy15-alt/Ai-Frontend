@@ -144,7 +144,7 @@ export function WorkspaceModal() {
                 <div className="space-y-3 text-xs text-slate-300">
                   <div className="flex justify-between items-center py-1 border-b border-white/5">
                     <span className="text-slate-400">Backend Endpoint:</span>
-                    <span className="font-mono text-cyan-300">http://localhost:5000</span>
+                    <span className="font-mono text-cyan-300">https://ai-backend-doge.onrender.com</span>
                   </div>
                   <div className="flex justify-between items-center py-1 border-b border-white/5">
                     <span className="text-slate-400">API Connection:</span>
