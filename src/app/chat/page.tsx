@@ -65,7 +65,7 @@ export default function ChatPage() {
           });
         } else if (res.status === 401 || res.status === 403) {
           // Only redirect on explicit auth rejection, not on network/server errors
-          router.push('/auth');
+          // router.push('/auth');
         }
       } catch {
         // Fallback for offline/no-backend development so the UI remains testable
